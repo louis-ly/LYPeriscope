@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LYLiveGiftBarrageView">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pui-Dz-8dM">
+                    <rect key="frame" x="246" y="-51" width="240" height="128"/>
+                    <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift_banner" translatesAutoresizingMaskIntoConstraints="NO" id="doL-Y1-L6W">
+                    <rect key="frame" x="32" y="16" width="204" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="204" id="2k5-DI-k44"/>
+                        <constraint firstAttribute="height" constant="48" id="oHv-WB-vdz"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head" translatesAutoresizingMaskIntoConstraints="NO" id="THV-Li-ShA">
+                    <rect key="frame" x="8" y="16" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2Gd-gw-uap"/>
+                        <constraint firstAttribute="width" constant="48" id="ZMb-Fa-M4a"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tinyCar" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-vm-Oyj">
+                    <rect key="frame" x="151" y="0.0" width="96" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="YC3-Rf-AQu"/>
+                        <constraint firstAttribute="width" constant="96" id="nyI-bS-0ep"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我最靓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-Xy-L8F">
+                    <rect key="frame" x="64" y="16" width="94" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="1i0-qt-rJc"/>
+                        <constraint firstAttribute="width" constant="94" id="CKx-fZ-gS7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送一辆保时捷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-F8-cfN">
+                    <rect key="frame" x="64" y="40" width="94" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="M7L-ay-0Vc"/>
+                        <constraint firstAttribute="height" constant="24" id="qac-Xm-zr9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.97924960899736835" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qf5-Xy-L8F" firstAttribute="leading" secondItem="THV-Li-ShA" secondAttribute="trailing" constant="8" id="0LW-TQ-kTD"/>
+                <constraint firstItem="O1l-vm-Oyj" firstAttribute="leading" secondItem="THV-Li-ShA" secondAttribute="trailing" constant="95" id="36J-xE-edd"/>
+                <constraint firstAttribute="bottom" secondItem="O1l-vm-Oyj" secondAttribute="bottom" id="8VC-cc-dAy"/>
+                <constraint firstItem="doL-Y1-L6W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="NnE-M3-oFk"/>
+                <constraint firstItem="1wU-F8-cfN" firstAttribute="top" secondItem="qf5-Xy-L8F" secondAttribute="bottom" id="P79-IJ-y5P"/>
+                <constraint firstAttribute="bottom" secondItem="doL-Y1-L6W" secondAttribute="bottom" id="Uyy-UM-rZO"/>
+                <constraint firstAttribute="bottom" secondItem="1wU-F8-cfN" secondAttribute="bottom" id="VdB-uU-8aC"/>
+                <constraint firstItem="THV-Li-ShA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="lWD-6W-rjV"/>
+                <constraint firstItem="1wU-F8-cfN" firstAttribute="leading" secondItem="THV-Li-ShA" secondAttribute="trailing" constant="8" id="om8-cu-LrQ"/>
+                <constraint firstAttribute="bottom" secondItem="THV-Li-ShA" secondAttribute="bottom" id="wkU-7d-Nxg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="pui-Dz-8dM"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatarImageView" destination="THV-Li-ShA" id="pYs-h7-vcs"/>
+                <outlet property="contentLabel" destination="1wU-F8-cfN" id="19S-mJ-LSQ"/>
+                <outlet property="giftImageView" destination="O1l-vm-Oyj" id="ZvK-U9-08q"/>
+                <outlet property="nickNameLabel" destination="qf5-Xy-L8F" id="r6e-88-fYX"/>
+            </connections>
+            <point key="canvasLocation" x="332.5" y="380"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_head" width="86" height="86"/>
+        <image name="gift_banner" width="174" height="41"/>
+        <image name="tinyCar" width="192" height="100"/>
+    </resources>
+</document>
