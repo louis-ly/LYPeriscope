@@ -179,6 +179,12 @@
 }
 
 
+- (IBAction)avatarBtnDidClicked:(UIButton *)btn {
+    [self.view showAlert:@"此处应该弹出个人资料框"];
+}
+
+
+
 - (void)keyboardWillChangeFrame:(NSNotification *)notification {
     if (!self.textField.isEditing) return;
     NSDictionary *userInfo = notification.userInfo;
